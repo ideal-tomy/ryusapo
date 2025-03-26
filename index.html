@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="未来を切り拓く留学体験 - 英語力と自律性を育む留学サポート。海外大学出身者のリアルな経験を活かした一気通貫のサポートで、充実した留学をスタート">
+    <title>留学サポート公式サイト | 英語力と自律性を育む留学体験</title>
+    
+    <!-- Google Fonts - Noto Sans JP -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0B3D91',
+                        secondary: '#4FB3FF',
+                        accent: '#FF8C42',
+                        lightBg: '#F5F9FF'
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans JP', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- カスタムCSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/custom.css">
+    
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "留学サポート",
+        "url": "https://example.com",
+        "logo": "https://example.com/images/logo.png",
+        "description": "海外留学の価値と留学サポートのサービス内容を効果的に伝え、資料請求や無料相談申し込みへのコンバージョンを促進します",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+81-03-1234-5678",
+            "contactType": "customer service"
+        },
+        "sameAs": [
+            "https://www.facebook.com/example",
+            "https://www.instagram.com/example",
+            "https://twitter.com/example"
+        ]
+    }
+    </script>
+</head>
+<body class="font-sans text-gray-800 bg-white">
+    <!-- ヘッダー -->
+    <header class="fixed w-full bg-white shadow-md z-50 transition-all duration-300" id="header">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="flex items-center">
+                <img src="./images/logo.jpg" alt="留学サポートロゴ" class="h-10">
+            </a>
+            
+            <!-- デスクトップナビゲーション -->
+            <nav class="hidden md:flex space-x-6">
+                <a href="#value" class="text-gray-700 hover:text-primary transition-colors">留学の価値</a>
+                <a href="#services" class="text-gray-700 hover:text-primary transition-colors">サービス</a>
+                <a href="#background" class="text-gray-700 hover:text-primary transition-colors">社会背景</a>
+                <a href="#testimonials" class="text-gray-700 hover:text-primary transition-colors">体験談</a>
+                <a href="#faq" class="text-gray-700 hover:text-primary transition-colors">よくある質問</a>
+            </nav>
+            
+            <!-- CTAボタン -->
+            <a href="#contact" class="hidden md:block bg-primary hover:bg-blue-800 text-white font-bold py-2 px-6 rounded-full transition-all hover:shadow-lg">
+                LINE登録
+            </a>
+            
+            <!-- モバイルメニューボタン -->
+            <button class="md:hidden text-gray-500 focus:outline-none" id="menu-toggle">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        
+        <!-- モバイルナビゲーション -->
+        <div class="md:hidden hidden bg-white w-full shadow-lg" id="mobile-menu">
+            <div class="container mx-auto px-4 py-3">
+                <nav class="flex flex-col space-y-4">
+                    <a href="#value" class="text-gray-700 hover:text-primary transition-colors py-2">留学の価値</a>
+                    <a href="#services" class="text-gray-700 hover:text-primary transition-colors py-2">サービス</a>
+                    <a href="#background" class="text-gray-700 hover:text-primary transition-colors py-2">社会背景</a>
+                    <a href="#testimonials" class="text-gray-700 hover:text-primary transition-colors py-2">体験談</a>
+                    <a href="#faq" class="text-gray-700 hover:text-primary transition-colors py-2">よくある質問</a>
+                    <a href="#contact" class="bg-primary hover:bg-blue-800 text-white font-bold py-3 px-6 rounded-full transition-all hover:shadow-lg text-center">
+                        資料請求
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main>
+        <!-- ヒーローセクション -->
+        <section class="min-h-screen flex items-center justify-center bg-gradient-to-b from-white to-lightBg pt-20" id="hero">
+            <div class="container mx-auto px-4 py-16 md:py-24 flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <img src="./images/top01.jpg" alt="留学生活のイメージ" class="rounded-lg shadow-2xl w-full h-auto">
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-6 leading-tight">
+                        未来を切り拓く<br>留学体験
+                    </h1>
+                    <p class="text-xl md:text-2xl text-gray-700 mb-8">
+                        英語力と自律性を育む留学サポート
+                    </p>
+                    <p class="text-lg text-gray-600 mb-10 max-w-lg mx-auto md:mx-0">
+                        海外大学出身者のリアルな経験を活かした一気通貫のサポートで、充実した留学をスタート
+                    </p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center md:justify-start">
+                        <a href="#contact" class="border-2 border-primary text-primary hover:bg-primary hover:text-white font-bold py-3 px-8 rounded-full transition-all hover:shadow-lg text-center">
+                            LINE登録
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+                <a href="#value" class="text-primary">
+                    <i class="fas fa-chevron-down text-3xl"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- 価値提案セクション -->
+        <section class="py-16 md:py-24 bg-white" id="value">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">留学体験で得られる3つの出会い</h2>
+                    <p class="text-lg text-gray-600 max-w-3xl mx-auto">たった数週間の体験でも、人生を変えるような出会いがあります。</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- 価値1 -->
+                    <div class="bg-lightBg rounded-lg p-8 shadow-lg transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+                        <div class="text-secondary text-5xl mb-6">
+                            <i class="fas fa-globe-asia"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary mb-4">新しい世界との出会い</h3>
+                        <p class="text-gray-600 mb-4">「世界は広い」という言葉を、体験を通して実感。自分の可能性が無限に広がっていくことに気づく瞬間を体験できます。</p>
+                        <div class="mt-6 p-4 bg-white rounded-lg">
+                            <p class="text-sm text-gray-500">参加者の声</p>
+                            <p class="text-lg text-primary mt-2">「日本では考えられなかった選択肢が、たくさん見えてきました」</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 価値2 -->
+                    <div class="bg-lightBg rounded-lg p-8 shadow-lg transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+                        <div class="text-secondary text-5xl mb-6">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary mb-4">意外な自分との出会い</h3>
+                        <p class="text-gray-600 mb-4">「英語が苦手」「人見知り」そんな不安も、新しい環境では意外と平気かも。自分の新しい一面を発見できます。</p>
+                        <div class="mt-6 p-4 bg-white rounded-lg">
+                            <p class="text-sm text-gray-500">参加者の声</p>
+                            <p class="text-lg text-primary mt-2">「最初は不安でしたが、気づけば積極的に話しかけていました」</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 価値3 -->
+                    <div class="bg-lightBg rounded-lg p-8 shadow-lg transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+                        <div class="text-secondary text-5xl mb-6">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary mb-4">価値観との出会い</h3>
+                        <p class="text-gray-600 mb-4">「当たり前」が当たり前じゃない世界。異なる価値観との出会いが、新しい考え方のきっかけを与えてくれます。</p>
+                        <div class="mt-6 p-4 bg-white rounded-lg">
+                            <p class="text-sm text-gray-500">参加者の声</p>
+                            <p class="text-lg text-primary mt-2">「みんな違ってみんないいってこういうことなんだなと実感しました</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 次のセクションへの導線 -->
+                <div class="text-center mt-16">
+                    <h3 class="text-2xl md:text-3xl font-bold text-primary mb-4">今必要なのは、真の多様性と協調性</h3>
+                    <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-8">多様性や価値観、コミュニケーションや協調性<br>体験は全ての学習に勝る成長要素</p>
+                    
+                    <!-- 追加するデータセクション -->
+                    <div class="container mx-auto px-4 my-16">
+                        <div class="w-full bg-gradient-to-r from-[#fdd000] via-[#9fd9f6] to-[#fdd000] transform -skew-y-2 mb-20 relative overflow-hidden">
+                            <div class="absolute inset-0 opacity-10">
+                                <div class="w-full h-full bg-repeat" style="background-image: url('data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E');"></div>
+                            </div>
+                            <div class="container mx-auto px-4 py-16">
+                                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+                                    <!-- カード1: 年収の差 -->
+                                    <div class="bg-white/90 backdrop-blur rounded-xl shadow-lg p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 transform rotate-2">
+                                        <div class="text-4xl font-black bg-gradient-to-r from-[#fdd000] to-[#9fd9f6] bg-clip-text text-transparent mb-4">200万円</div>
+                                        <h4 class="text-xl font-bold text-gray-800 mb-4">年収の差</h4>
+                                        <p class="text-gray-600">グローバル人材としての評価は、実際の収入の違いとなって表れています。</p>
+                                    </div>
+
+                                    <!-- カード2: 就活の優位性 -->
+                                    <div class="bg-white/90 backdrop-blur rounded-xl shadow-lg p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+                                        <div class="text-2xl font-bold text-gray-800 mb-4">就活での優位性</div>
+                                        <p class="text-gray-600 mb-4">海外大学での採用</p>
+                                        <p class="text-gray-600">一流企業が海外大学に直接訪問し、その場で面接、内定を出すケースも多数。</p>
+                                    </div>
+
+                                    <!-- カード3: 心の教育 -->
+                                    <div class="bg-white/90 backdrop-blur rounded-xl shadow-lg p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 transform -rotate-2">
+                                        <div class="text-2xl font-bold text-gray-800 mb-4">心の教育</div>
+                                        <div class="space-y-4">
+                                            <p class="text-gray-600">異文化との出会いを通じた視野の拡大</p>
+                                            <p class="text-gray-600">五感を使った体験による心の成長</p>
+                                            <p class="text-gray-600">多様な価値観に触れることでの人間的成長</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="#background" class="border-2 border-primary text-primary hover:bg-primary hover:text-white font-bold py-3 px-8 rounded-full transition-all hover:shadow-lg inline-block">
+                        LINE登録
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 社会背景セクション -->
+        <section class="py-16 md:py-24 bg-white" id="background">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col md:flex-row items-center mb-16">
+                    <div class="md:w-1/2 mb-8 md:mb-0 md:pr-12">
+                        <div class="bg-white rounded-lg shadow-xl p-6">
+                            <h3 class="text-xl font-bold text-primary mb-4">現代の子育て世代が直面する課題</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-start">
+                                    <span class="text-secondary mr-3"><i class="fas fa-exclamation-circle mt-1"></i></span>
+                                    <p class="text-gray-600">教育費の高騰と将来への不安</p>
+                                </div>
+                                <div class="flex items-start">
+                                    <span class="text-secondary mr-3"><i class="fas fa-exclamation-circle mt-1"></i></span>
+                                    <p class="text-gray-600">従来の学歴や資格が通用しない時代に</p>
+                                </div>
+                                <div class="flex items-start">
+                                    <span class="text-secondary mr-3"><i class="fas fa-exclamation-circle mt-1"></i></span>
+                                    <p class="text-gray-600">子どもの可能性を広げる機会の不足</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2">
+                        <h3 class="text-2xl font-bold text-primary mb-4">変化する社会で求められる力</h3>
+                        <p class="text-gray-600 mb-6">今の子どもたちが社会に出る頃には、現在の仕事の多くが変化しているとも言われています。そんな時代を生き抜くために必要なのは、新しい環境で学び、適応する力です。</p>
+                    </div>
+                </div>
+                
+                <div class="bg-lightBg rounded-lg p-8 shadow-lg text-center mb-16">
+                    <h3 class="text-2xl font-bold text-primary mb-4">だからこそ、今行動を</h3>
+                    <p class="text-lg text-gray-600 mb-6">環境は変えられます。<br>新しい世界との出会いが、子どもたちに無限の可能性を見せてくれます。</p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+                        <div class="bg-white rounded-lg p-6 shadow">
+                            <div class="text-secondary text-3xl mb-4">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <h4 class="text-xl font-bold text-primary mb-2">世界を知る</h4>
+                            <p class="text-gray-600">違う文化や価値観に触れることで、視野が大きく広がります</p>
+                        </div>
+                        <div class="bg-white rounded-lg p-6 shadow">
+                            <div class="text-secondary text-3xl mb-4">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h4 class="text-xl font-bold text-primary mb-2">仲間と出会う</h4>
+                            <p class="text-gray-600">同じ志を持つ仲間との出会いが、新しい可能性を見せてくれます</p>
+                        </div>
+                        <div class="bg-white rounded-lg p-6 shadow">
+                            <div class="text-secondary text-3xl mb-4">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <h4 class="text-xl font-bold text-primary mb-2">未来を掴む</h4>
+                            <p class="text-gray-600">体験を通じて得た自信が、将来の選択肢を広げます</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center">
+                    <a href="#services" class="bg-primary hover:bg-blue-800 text-white font-bold py-3 px-8 rounded-full transition-all hover:shadow-lg inline-block">
+                        LINE登録
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- サービス紹介セクション -->
+        <section class="py-16 md:py-24 bg-gradient-to-b from-white to-lightBg" id="services">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">あなたの段階に合わせた3つのサポートプログラム</h2>
+                    <p class="text-lg text-gray-600 max-w-3xl mx-auto">留学を考え始めた初期段階から実際の留学生活まで、あなたの状況に合わせた最適なサポートを提供します。</p>
+                </div>
+                
+                <!-- プログラム概要 -->
+                <div class="w-full bg-gradient-to-r from-[#fdd000] via-[#9fd9f6] to-[#fdd000] transform -skew-y-2 mb-20 relative overflow-hidden">
+                    <div class="absolute inset-0 opacity-10">
+                        <div class="w-full h-full bg-repeat" style="background-image: url('data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E');"></div>
+                    </div>
+                    <div class="container mx-auto px-4 py-16">
+                        <div class="max-w-4xl mx-auto text-center">
+                            <div class="inline-block bg-white rounded-lg px-10 py-6 shadow-2xl transform hover:scale-105 transition-transform duration-300 -rotate-2">
+                                <h3 class="text-5xl md:text-7xl font-black bg-gradient-to-r from-[#fdd000] via-[#0068b7] to-[#9fd9f6] bg-clip-text text-transparent leading-tight">
+                                    短期サマーキャンプ
+                                </h3>
+                            </div>
+                            <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6 transform -rotate-2">
+                                <div class="bg-white bg-opacity-20 backdrop-blur-sm rounded-lg p-6 transform hover:-translate-y-1 transition-transform duration-300">
+                                    <p class="text-white text-lg font-bold">5泊7日の短期プログラム</p>
+                                </div>
+                                <div class="bg-white bg-opacity-20 backdrop-blur-sm rounded-lg p-6 transform hover:-translate-y-1 transition-transform duration-300">
+                                    <p class="text-white text-lg font-bold">現地でのアクティビティ</p>
+                                </div>
+                                <div class="bg-white bg-opacity-20 backdrop-blur-sm rounded-lg p-6 transform hover:-translate-y-1 transition-transform duration-300">
+                                    <p class="text-white text-lg font-bold">英語でのプレゼンテーション</p>
+                                </div>
+                            </div>
+                            <p class="text-lg text-white mt-8 max-w-3xl mx-auto transform -rotate-2 leading-relaxed">
+                                初めての海外体験や留学前準備に最適なプログラム。<br>
+                                新しい環境での体験を通じて、留学への第一歩を踏み出します。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- プログラム詳細（交互表示） -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-x-16 md:gap-y-20 max-w-7xl mx-auto">
+                    <!-- サービス1：サマーキャンプ -->
+                    <div class="md:bg-white md:p-8 md:rounded-lg">
+                        <img src="./images/images02.jpg"サマーキャンププログラム" class="w-full md:aspect-[4/3] object-cover rounded-lg shadow-xl mb-8">
+                    </div>
+                    <div class="md:bg-lightBg md:p-8 md:rounded-lg flex flex-col justify-center">
+                        <ul class="mb-8 space-y-3 px-4 md:px-0">
+                            <li class="flex items-start">
+                                <span class="text-secondary mr-2"><i class="fas fa-check-circle mt-1"></i></span>
+                                <span>五感を使うアクティビティ</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-secondary mr-2"><i class="fas fa-check-circle mt-1"></i></span>
+                                <span>英語でのプレゼンテーション作成</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-secondary mr-2"><i class="fas fa-check-circle mt-1"></i></span>
+                                <span>現地の方へ英語でインタビュー</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-secondary mr-2"><i class="fas fa-check-circle mt-1"></i></span>
+                                <span>プレゼンテーション資料作成</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-secondary mr-2"><i class="fas fa-check-circle mt-1"></i></span>
+                                <span>英語でプレゼンテーション発表</span>
+                            </li>
+                        </ul>
+                        <div class="bg-white/80 rounded-lg p-6 mx-4 md:mx-0">
+                            <h4 class="text-xl font-bold text-primary mb-4">プログラムの特徴</h4>
+                            <ul class="space-y-3">
+                                <li class="flex items-start">
+                                    <span class="text-secondary mr-2"><i class="fas fa-lightbulb mt-1"></i></span>
+                                    <span>日本ではプレゼンテーションを学ぶ機会が少なく、世界と比べてプレゼンスキルが劣っている現状を改善</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-secondary mr-2"><i class="fas fa-lightbulb mt-1"></i></span>
+                                    <span>外資コンサル出身のサポーターが学生でも簡単にできる、PowerPointでも資料作成スキルを伝授</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-secondary mr-2"><i class="fas fa-lightbulb mt-1"></i></span>
+                                    <span>海外でも通用するプレゼンテーションの作成・発表スキルの向上</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-secondary mr-2"><i class="fas fa-lightbulb mt-1"></i></span>
+                                    <span>課題の仮説立て、現地人へ英語でのインタビュー、打ち手立案により、問題解決能力を向上</span>
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+                
+                    <!-- サービス2：現地校見学ツアー -->
+                    <div class="md:bg-lightBg md:p-8 md:rounded-lg flex flex-col justify-center">
+                        <div class="px-4 md:px-0">
+                            <h3 class="text-2xl md:text-3xl font-bold text-primary mb-4 text-center md:text-left">現地校見学ツアー</h3>
+                            <p class="text-gray-600 mb-6">実際に学校関係者や生徒との対話を通じて、生の声を聴き、最適な留学先との出会いをサポートします。</p>
+                        <ul class="mb-8 space-y-3">
+                            <li class="flex items-start">
+                                <span class="text-secondary mr-2"><i class="fas fa-check-circle mt-1"></i></span>
+                                    <span>複数の学校訪問と学校案内</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-secondary mr-2"><i class="fas fa-check-circle mt-1"></i></span>
+                                    <span>学校関係者や生徒との対話をサポート</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-secondary mr-2"><i class="fas fa-check-circle mt-1"></i></span>
+                                <span>現地の生活環境調査</span>
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+                    <div class="md:bg-white md:p-8 md:rounded-lg">
+                        <img src="./images/summer02.jpg" alt="現地校見学ツアー" class="w-full md:aspect-[4/3] object-cover rounded-lg shadow-xl">
+                </div>
+                
+                    <!-- サービス3：留学準備・手続きサポート -->
+                    <div class="md:bg-white md:p-8 md:rounded-lg">
+                        <img src="./images/images04.jpg" alt="留学準備・手続きサポート" class="w-full md:aspect-[4/3] object-cover rounded-lg shadow-xl">
+                    </div>
+                    <div class="md:bg-lightBg md:p-8 md:rounded-lg flex flex-col justify-center">
+                        <div class="px-4 md:px-0">
+                            <h3 class="text-2xl md:text-3xl font-bold text-primary mb-4 text-center md:text-left">留学準備・手続きサポート</h3>
+                        <p class="text-gray-600 mb-6">留学決定から出発までの全プロセスをサポート。学校選びから入学手続き、ビザ申請、出発前オリエンテーションまで一貫してサポートします。</p>
+                        <ul class="mb-8 space-y-3">
+                            <li class="flex items-start">
+                                <span class="text-secondary mr-2"><i class="fas fa-check-circle mt-1"></i></span>
+                                <span>志望校選定と出願書類作成サポート</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-secondary mr-2"><i class="fas fa-check-circle mt-1"></i></span>
+                                <span>滞在先（ホームステイ・寮）の手配</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-secondary mr-2"><i class="fas fa-check-circle mt-1"></i></span>
+                                <span>出発前オリエンテーションと現地適応研修</span>
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 体験談セクション -->
+        <section class="py-16 md:py-24 bg-gradient-to-b from-white to-lightBg" id="testimonials">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">留学経験者からのメッセージ</h2>
+                    <p class="text-lg text-gray-600 max-w-3xl mx-auto">海外体験や留学を経験した人たちのメッセージを紹介します。</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- 体験談1 -->
+                    <div class="bg-white rounded-lg p-8 shadow-lg">
+                        <div class="flex items-center mb-6">
+                            <div class="w-16 h-16 rounded-full bg-lightBg flex items-center justify-center mr-4">
+                                <img src="./images/neta.jpg" alt="コースK" class="w-16 h-16 rounded-full object-cover">
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-primary">コースK</h3>
+                                <p class="text-gray-600">UCLA卒業</p>
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <div class="text-accent mb-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="text-gray-600 italic">日本では成績が悪く、逃げるようにアメリカへ行き、モテモテライフを満喫しました最高( ﾟДﾟ)</p>
+                        </div>
+                        <div class="text-gray-600">
+                            <p class="mb-2"><strong>留学前のTOEIC:</strong> 88点</p>
+                            <p><strong>留学後のTOEIC:</strong> 880点</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 体験談2 -->
+                    <div class="bg-white rounded-lg p-8 shadow-lg">
+                        <div class="flex items-center mb-6">
+                            <div class="w-16 h-16 rounded-full bg-lightBg flex items-center justify-center mr-4">
+                                <img src="./images/neta2.jpg" alt="Rily" class="w-16 h-16 rounded-full object-cover">
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-primary">Rily</h3>
+                                <p class="text-gray-600">UCLA卒業</p>
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <div class="text-accent mb-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="text-gray-600 italic">素行がバレていない国に行こうとアメリカに留学し、見事イメチェン成功エリート街道爆走中( ﾟДﾟ)</p>
+                        </div>
+                        <div class="text-gray-600">
+                            <p><strong>就職:</strong> 世界3大コンサルティング会社で英語を武器に最速出世中</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 体験談3 (保護者) -->
+                    <div class="bg-white rounded-lg p-8 shadow-lg">
+                        <div class="flex items-center mb-6">
+                            <div class="w-16 h-16 rounded-full bg-lightBg flex items-center justify-center mr-4">
+                                <img src="./images/neta3.jpg" alt="秋鳳" class="w-16 h-16 rounded-full object-cover">
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-primary">秋鳳</h3>
+                                <p class="text-gray-600">保護者</p>
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <div class="text-accent mb-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="text-gray-600 italic">あのまま日本で過ごしていたらどうなっていたことか( ；∀；)素晴らしい経験をさせてもらえたと心から思っておりますハイ( ﾟДﾟ)</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-12">
+                    <a href="#contact" class="border-2 border-primary text-primary hover:bg-primary hover:text-white font-bold py-3 px-8 rounded-full transition-all hover:shadow-lg inline-block">
+                        LINE登録
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- よくある質問セクション -->
+        <section class="py-16 md:py-24 bg-white" id="faq">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">よくある質問</h2>
+                    <p class="text-lg text-gray-600 max-w-3xl mx-auto">留学に関するよくある質問にお答えします。さらに詳しい情報は、お気軽にお問い合わせください。</p>
+                </div>
+                
+                <div class="max-w-4xl mx-auto">
+                    <!-- FAQ項目1 -->
+                    <div class="mb-6 border-b border-gray-200 pb-6">
+                        <button class="flex justify-between items-center w-full text-left focus:outline-none" onclick="toggleFAQ(this)">
+                            <h3 class="text-xl font-bold text-primary">英語が全く話せませんが、留学できますか？</h3>
+                            <span class="text-primary text-2xl transition-transform duration-200">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </button>
+                        <div class="mt-4 hidden">
+                            <p class="text-gray-600">もちろんです！多くの留学生が初心者からスタートしています。当社では以下のようなサポートを提供しています：</p>
+                            <ul class="list-disc pl-5 mt-2 space-y-1 text-gray-600">
+                                <li>出発前の基礎英語研修（3ヶ月間）</li>
+                                <li>現地での日本人スタッフによる24時間サポート</li>
+                                <li>初心者向けの特別クラス設置</li>
+                                <li>日本人留学生とのバディシステム</li>
+                            </ul>
+                            <p class="text-gray-600 mt-2">実際に、TOEICスコアが300点台から始めて、1年後に800点を超える方も多数いらっしゃいます。大切なのは、チャレンジする気持ちです！</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ項目2 -->
+                    <div class="mb-6 border-b border-gray-200 pb-6">
+                        <button class="flex justify-between items-center w-full text-left focus:outline-none" onclick="toggleFAQ(this)">
+                            <h3 class="text-xl font-bold text-primary">留学費用はどのくらいかかりますか？</h3>
+                            <span class="text-primary text-2xl"><i class="fas fa-chevron-down"></i></span>
+                        </button>
+                        <div class="mt-4 faq-answer">
+                            <p class="text-gray-600">プログラムによって費用は異なりますが、一般的な目安は以下の通りです：</p>
+                            <ul class="list-disc pl-5 mt-2 space-y-1 text-gray-600">
+                                <li>2週間のサマーキャンプ：45-55万円</li>
+                                <li>3ヶ月の語学留学：100-150万円</li>
+                                <li>1年間の正規留学：250-350万円</li>
+                            </ul>
+                            <p class="text-gray-600 mt-2">費用には以下が含まれています：</p>
+                            <ul class="list-disc pl-5 mt-2 space-y-1 text-gray-600">
+                                <li>授業料・入学金</li>
+                                <li>滞在費（ホームステイまたは学生寮）</li>
+                                <li>食事（プログラムによる）</li>
+                                <li>海外留学保険</li>
+                                <li>渡航前サポート費用</li>
+                            </ul>
+                            <p class="text-gray-600 mt-2">また、様々な奨学金制度や分割払いプランもご用意していますので、お気軽にご相談ください。</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ項目4 -->
+                    <div class="mb-6 border-b border-gray-200 pb-6">
+                        <button class="flex justify-between items-center w-full text-left focus:outline-none" onclick="toggleFAQ(this)">
+                            <h3 class="text-xl font-bold text-primary">どのような学校や国を選べますか？</h3>
+                            <span class="text-primary text-2xl"><i class="fas fa-chevron-down"></i></span>
+                        </button>
+                        <div class="mt-4 faq-answer">
+                            <p class="text-gray-600">以下の国々の厳選された教育機関と提携しています：</p>
+                            <ul class="list-disc pl-5 mt-2 space-y-1 text-gray-600">
+                                <li>アメリカ：ニューヨーク、ロサンゼルス、ボストンなど</li>
+                                <li>カナダ：バンクーバー、トロント、ビクトリアなど</li>
+                                <li>イギリス：ロンドン、オックスフォード、ケンブリッジなど</li>
+                                <li>オーストラリア：シドニー、メルボルン、ブリスベンなど</li>
+                                <li>ニュージーランド：オークランド、クライストチャーチなど</li>
+                            </ul>
+                            <p class="text-gray-600 mt-2">学校選びは、あなたの目的（進学、就職、資格取得など）、英語レベル、予算、希望する環境に応じて、経験豊富なカウンセラーが丁寧にアドバイスいたします。</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ項目5 -->
+                    <div class="mb-6">
+                        <button class="flex justify-between items-center w-full text-left focus:outline-none" onclick="toggleFAQ(this)">
+                            <h3 class="text-xl font-bold text-primary">留学後のサポートはありますか？</h3>
+                            <span class="text-primary text-2xl"><i class="fas fa-chevron-down"></i></span>
+                        </button>
+                        <div class="mt-4 faq-answer">
+                            <p class="text-gray-600">帰国後も継続的なサポートを提供しています：</p>
+                            <ul class="list-disc pl-5 mt-2 space-y-1 text-gray-600">
+                                <li>英語力維持のためのオンライン英会話（月4回無料）</li>
+                                <li>留学経験を活かしたキャリアカウンセリング</li>
+                                <li>留学経験者限定の就職支援プログラム</li>
+                                <li>国際交流イベントの優先案内</li>
+                                <li>留学経験者コミュニティへの参加</li>
+                            </ul>
+                            <p class="text-gray-600 mt-2">留学で得た経験と英語力を最大限に活かせるよう、長期的な視点でサポートいたします。</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-12">
+                    <a href="#contact" class="bg-primary hover:bg-blue-800 text-white font-bold py-3 px-8 rounded-full transition-all hover:shadow-lg inline-block">
+                        LINE登録
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- お問い合わせ/CTAセクション -->
+        <section class="py-16 md:py-24 bg-gradient-to-b from-white to-lightBg" id="contact">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">あなたの留学をサポートします</h2>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- フッター -->
+        <footer class="bg-primary text-white py-12">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    <div>
+                        <img src="./images/logo.jpg" alt="留学サポートロゴ" class="h-10 mb-4">
+                        <p class="text-gray-300 mb-4">海外留学の価値と留学サポートのサービス内容を効果的に伝え、充実した留学をサポートします。</p>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-xl font-bold mb-4">サービス</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#services" class="text-gray-300 hover:text-white transition-colors">サマーキャンププログラム</a></li>
+                            <li><a href="#services" class="text-gray-300 hover:text-white transition-colors">現地校見学ツアー</a></li>
+                            <li><a href="#services" class="text-gray-300 hover:text-white transition-colors">留学準備・手続きサポート</a></li>
+                            <li><a href="#" class="text-gray-300 hover:text-white transition-colors">帰国後サポート</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-xl font-bold mb-4">留学先</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-300 hover:text-white transition-colors">アメリカ</a></li>
+                            <li><a href="#" class="text-gray-300 hover:text-white transition-colors">カナダ</a></li>
+                            <li><a href="#" class="text-gray-300 hover:text-white transition-colors">イギリス</a></li>
+                            <li><a href="#" class="text-gray-300 hover:text-white transition-colors">オーストラリア</a></li>
+                            <li><a href="#" class="text-gray-300 hover:text-white transition-colors">ニュージーランド</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-xl font-bold mb-4">会社情報</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-300 hover:text-white transition-colors">会社概要</a></li>
+                            <li><a href="#" class="text-gray-300 hover:text-white transition-colors">プライバシーポリシー</a></li>
+                            <li><a href="#" class="text-gray-300 hover:text-white transition-colors">利用規約</a></li>
+                            <li><a href="#contact" class="text-gray-300 hover:text-white transition-colors">お問い合わせ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                    <p>&copy; 2025 留学サポート. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- JavaScript -->
+    <script>
+        // モバイルメニューの切り替え
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // スクロール時のヘッダー変更
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.classList.add('bg-white', 'shadow-md');
+                header.classList.remove('bg-transparent');
+            } else {
+                header.classList.remove('bg-white', 'shadow-md');
+                header.classList.add('bg-transparent');
+            }
+        });
+        
+        // FAQの開閉
+        function toggleFAQ(element) {
+            const answer = element.nextElementSibling;
+            const icon = element.querySelector('i');
+            
+            answer.classList.toggle('hidden');
+            icon.classList.toggle('fa-chevron-down');
+            icon.classList.toggle('fa-chevron-up');
+        }
+        
+        // ページ読み込み時に全ての回答を非表示にする
+        document.addEventListener('DOMContentLoaded', function() {
+            const answers = document.querySelectorAll('.faq-answer');
+            answers.forEach(answer => {
+                answer.classList.add('hidden');
+            });
+        });
+        
+        // フォーム送信処理
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // ここにフォーム送信のAJAX処理を追加
+            alert('お問い合わせありがとうございます。48時間以内に担当者からご連絡いたします。');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
