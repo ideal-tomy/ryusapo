@@ -1,0 +1,153 @@
+/* カスタムスタイル - 留学サポートランディングページ */
+
+:root {
+    --primary: #0B3D91;
+    --secondary: #4FB3FF;
+    --accent: #FF8C42;
+    --light-bg: #F8FBFF;
+}
+
+/* 全体のスタイル */
+body {
+    font-family: 'Noto Sans JP', 'Helvetica Neue', Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* カスタムカラークラス */
+.bg-primary {
+    background-color: var(--primary);
+}
+
+.bg-secondary {
+    background-color: var(--secondary);
+}
+
+.bg-accent {
+    background-color: var(--accent);
+}
+
+.bg-lightBg {
+    background-color: var(--light-bg);
+}
+
+.text-primary {
+    color: var(--primary);
+}
+
+.text-secondary {
+    color: var(--secondary);
+}
+
+.text-accent {
+    color: var(--accent);
+}
+
+/* ヘッダーのトランジション */
+#header {
+    transition: all 0.3s ease;
+}
+
+/* ヒーローセクションのスタイル */
+.hero-section {
+    background: linear-gradient(rgba(11, 61, 145, 0.8), rgba(11, 61, 145, 0.6)), url('../images/hero-bg-placeholder.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+/* カードのホバーエフェクト */
+.service-card {
+    transition: all 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* ボタンのホバーエフェクト */
+.btn-primary {
+    background-color: var(--primary);
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0A2D6D;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(11, 61, 145, 0.3);
+}
+
+/* テスティモニアルカード */
+.testimonial-card {
+    transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: scale(1.03);
+}
+
+/* FAQ アコーディオン */
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.faq-answer.active {
+    max-height: 500px;
+}
+
+/* フォーム要素のフォーカス */
+input:focus, textarea:focus, select:focus {
+    border-color: var(--primary);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(11, 61, 145, 0.2);
+}
+
+/* レスポンシブ調整 */
+@media (max-width: 768px) {
+    .hero-section {
+        min-height: 60vh;
+    }
+    
+    .service-card:hover {
+        transform: translateY(-5px);
+    }
+}
+
+/* アニメーション */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* スクロールダウンインジケーター */
+.scroll-down {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0) translateX(-50%);
+    }
+    40% {
+        transform: translateY(-20px) translateX(-50%);
+    }
+    60% {
+        transform: translateY(-10px) translateX(-50%);
+    }
+}
